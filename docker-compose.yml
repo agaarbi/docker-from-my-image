@@ -1,0 +1,8 @@
+services:
+  print-and-write:
+    build: .
+    image: alpine-modified
+    volumes:
+      - data-volume:/logs
+volumes:
+  data-volume: {}
